@@ -1,6 +1,25 @@
+.*V2.14 *
+- Configuration du plugin : VARIATION : Insere uniquement si la consommation est > 0
+- Configuration du plugin : PUISSANCE : Ne pas insérer la valeur si la puissance est > 50 000
+- Corrections des previsions
+
+.*V2.13 *
+- BugFix Tache cron introuvable
+- BugFix Editer/Supprimer des données du tableau téléinfo dans l'onglet Données
+
+.*V2.12 *
+- Compatible Jeedom V3
+
+.*V2.11 *
+- Correction erreur $mode non definie sur la page de configuration des temperatures
+
 .*V2.10 *
 - Correction pour Docker
 - Correction du graphique 7 derniers jours pour l'equipement Eau
+- Correction date de debut de facture ( ajout du jour )
+- Correction de la date de prévision
+- Correction erreur log
+- Correction orthographe
 
 .*V2.9 *
 - Correction graphique 4 dernières semaines

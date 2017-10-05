@@ -26,6 +26,15 @@ Ce Tableau vous affiche la consommation par Jour / Semaine / Mois et Année. +
 Vous pouvez afficher le détail en vous positionnant sur le libellé +
 image:watt.jpg[]
 
+
+*Prévisions* +
+Les prévisions seront affichées uniquement si vous avez un historique 1an minimum pour pouvoir comprarer sur l'année précédente. +
+La prevision par années est calculé en Year to month. de janviers au dernier mois complet  +
+Si nous sommes en septembre alors la comparaisons se fera : +
+01/01/2017-> 31/08/2017 à 01/01/2016-> 31/08/2016 +
+image:prevision.png[]
+
+
 *Puissance* +
 Puissance instantanée sous forme de gauge +
 image:gauge.jpg[]
@@ -282,3 +291,18 @@ Attendre le message dans la partie information : +
 		ORDER BY `conso_teleinfo`.`rec_date` desc";
 
 ----
+
+==== Configuration du plugin : VARIATION : Insere uniquement si la consommation est > 0
+
+Permet d'inserer uniquement si la consommation est > 0. +
+Evite le probleme si votre module vous retourne une consommation inferieur à la derniere valeur enregistrée +
+image:config.png[]
+
+==== Configuration du plugin : PUISSANCE : Ne pas insérer la valeur si la puissance est > 50 000
+
+Permet de ne pas inserer la valeur si votre commande retourne une valeur erronée. +
+image:config.png[]
+
+
+
+
