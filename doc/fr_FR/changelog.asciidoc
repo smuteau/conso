@@ -1,3 +1,14 @@
+.*V3.2 *
+- Ajout page de correction des données
+- Mise en place des commandes.
+- Mise a jour de la documentation
+- Nouvelle présentation dans la configuration
+- Correction affichage 12 derniers mois TTC
+
+
+.*V3.1 *
+-Correction bug compteur eau
+
 .*V2.14 *
 - Configuration du plugin : VARIATION : Insere uniquement si la consommation est > 0
 - Configuration du plugin : PUISSANCE : Ne pas insérer la valeur si la puissance est > 50 000

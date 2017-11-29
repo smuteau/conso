@@ -144,6 +144,22 @@ Cet onglet affiche les informations techniques de des command. +
 Vous pouvez visualiser, modifier et supprimer les informations de la table teleinfo et  jour. +
 Cela vous permet de verifier le bon fonctionnement du cron et des valeurs. +
 
+==== Correcteur
+
+La page correcteur permet comme son nom l'indique de corriger les données.Il est possible que votre equipement vous envois des données erronées. +
+
+Tableau 1 +
+
+Pour  corriger les données, selectionner votre periode, aidez-vous de la page d'accueil pour connaitre exactement le jour ( graphique semaine).
+
+image:calendrier.png[]
+Une fois la recherche effectué, identifiez une variation a corrigé ( heure pleine et/ou heure creuse). +
+image:tableau.png[]
+
+Passer au tableau 2 +
+Insérer le timstamp du debut et de fin en vous aidant du tableau recherche
+Si le timestamp de fin n'est pas renseigné alors la correction se fera jusqua aujourd'hui.
+
 ==== Outils
 Synchroniser Aujourd'hui : permet de recalculer le jour.+
 Synchroniser les jours : permet de recalculer de tous les jours. +
@@ -272,6 +288,13 @@ Attendre le message dans la partie information : +
 ----
 [END CONSO_HISTORIQUE SUCCESS]
 ----
+
+
+==== Requete SQL creation de conso_current
+----
+		CREATE OR REPLACE VIEW `conso_current`  AS (SELECT * FROM conso_teleinfo WHERE rec_date = CURRENT_DATE() OR rec_date = DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY));
+----
+
 
 ==== Requete SQL creation Jour
 ----
