@@ -1,6 +1,32 @@
 # Plugin Jeedom Suivi conso
 ![alt tag](https://github.com/mickeys27/conso/blob/master/doc/images/conso_pres.png)
 
+.*V3.2 *
+- Ajout page de correction des données
+- Mise en place des commandes.
+- Mise a jour de la documentation
+- Nouvelle présentation dans la configuration
+- Correction affichage 12 derniers mois TTC
+
+
+.*V3.1 *
+-Correction bug compteur eau
+
+.*V2.14 *
+- Configuration du plugin : VARIATION : Insere uniquement si la consommation est > 0
+- Configuration du plugin : PUISSANCE : Ne pas insérer la valeur si la puissance est > 50 000
+- Corrections des previsions
+
+.*V2.13 *
+- BugFix Tache cron introuvable
+- BugFix Editer/Supprimer des données du tableau téléinfo dans l'onglet Données
+
+.*V2.12 *
+- Compatible Jeedom V3
+
+.*V2.11 *
+- Correction erreur $mode non definie sur la page de configuration des temperatures
+
 .*V2.10 *
 - Correction pour Docker
 - Correction du graphique 7 derniers jours pour l'equipement Eau
