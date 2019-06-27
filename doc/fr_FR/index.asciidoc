@@ -94,4 +94,4 @@ include::partie_3.asciidoc[]
 include::changelog.asciidoc[]
 
 === Faq
-include::fac.asciidoc[]
+include::faq.asciidoc[]
